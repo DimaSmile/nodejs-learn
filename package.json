@@ -2,7 +2,7 @@
   "name": "nodejs-learn",
   "version": "1.0.0",
   "description": "",
-  "type":"module",
+  "type": "module",
   "main": "main.js",
   "bin": {
     "show-time": "./bin/cli.js"
@@ -12,5 +12,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "got": "^12.0.1",
+    "yargs": "^17.3.1"
+  }
 }
