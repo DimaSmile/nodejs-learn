@@ -18,7 +18,6 @@ export default class UserController extends Controller {
     }
 
     store() {
-        // console.log(this.request);
         return this.response(this.#userService.create(this.request.JSON), 201);
     }
 
