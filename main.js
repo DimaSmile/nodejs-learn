@@ -6,7 +6,7 @@ import routes from './src/routes/api.js'
 const hostname = process.env.APP_URL;
 const port = process.env.APP_PORT;
 
-const server = http.createServer(async (request, response) => {
+const server = http.createServer((request, response) => {
     if (request.url === '/favicon.ico') {
         response.writeHead(200, {'Content-Type': 'image/x-icon'} );
         console.log('favicon requested');
